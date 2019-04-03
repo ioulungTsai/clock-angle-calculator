@@ -12,6 +12,6 @@ function clockAngleCalculator(hour, minute) {
   } else if (hour < 12) {
     return `${Math.abs(minute - hourToMinute - hourHandAdjust) * 6} degrees`
   } else {
-    return `${Math.abs(minute - hourToMinute - hourHandAdjust + 12) * 6} degrees`
+    return `${Math.abs(minute - (hour - 12) * 5 - hourHandAdjust) * 6} degrees`
   }
 }
