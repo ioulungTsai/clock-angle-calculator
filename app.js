@@ -15,3 +15,5 @@ function clockAngleCalculator(hour, minute) {
     return `${Math.abs(minute - (hour - 12) * 5 - hourHandAdjust) * 6} degrees`
   }
 }
+
+module.exports = clockAngleCalculator;
